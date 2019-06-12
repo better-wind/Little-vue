@@ -1,6 +1,6 @@
 <template>
   <div class="title">
-    <Button title="首页" @click="onClick"/>
+    <Button title="首页x" @click="onClick"/>
 
   </div>
 </template>
