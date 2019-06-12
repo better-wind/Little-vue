@@ -1,0 +1,29 @@
+{
+  "name": "little-vue",
+  "version": "1.0.0",
+  "description": "Little Vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luyi10year/Little-vue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luyi10year/Little-vue/issues"
+  },
+  "homepage": "https://github.com/luyi10year/Little-vue#readme",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-route": "^3.2.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.2"
+  }
+}
