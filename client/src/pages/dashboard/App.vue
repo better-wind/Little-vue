@@ -31,6 +31,6 @@
 
 <style lang="scss">
   .title {
-    background-color: #EEE;
+    background-color: #000;
   }
 </style>

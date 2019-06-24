@@ -1,8 +1,11 @@
 module.exports = [
   [
     'GET',
-    '/dashboard',
+    ['/dashboard', '/homepage'],
     'dashboard.DashboardController',
-    'getIndexHtml'
+    [
+      'setTitle',
+      'getIndexHtml'
+    ]
   ]
 ]

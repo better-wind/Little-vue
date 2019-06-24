@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Little</title>
-</head>
-<body>
-<div id="App"></div>
+{% extends 'app/views/base.html' %}
 
-<script src="/dist/dash.js"></script>
-</body>
-</html>
+{% block page_title %}
+  {{ title }}
+{% endblock %}
+
+{% block page_content %}
+  <div id="App"></div>
+{% endblock %}
+
+{% block page_script %}
+  <script src="/dist/dash.js"></script>
+{% endblock %}
