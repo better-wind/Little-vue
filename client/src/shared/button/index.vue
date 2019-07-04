@@ -5,6 +5,7 @@
 </template>
 
 <script>
+  import { getButtonText } from './button.ts';
   export default {
     name: 'shared-button',
 
@@ -19,6 +20,8 @@
 
     methods: {
       onClick() {
+        console.log(getButtonText(1));
+        console.log(getButtonText('2'));
         console.log('click');
         this.$emit('click', 'params')
       }

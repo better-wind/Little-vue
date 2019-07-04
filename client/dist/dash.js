@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _shared_button_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../shared/button/index */ \"./src/shared/button/index.vue\");\n/* harmony import */ var _shared_search_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/search/index */ \"./src/shared/search/index.vue\");\n//\n//\n//\n//\n//\n//\n//\n\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    name: '',\n\n    components: {\n        Button: _shared_button_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n        Search: _shared_search_index__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n    },\n\n    data: function data() {\n        return {\n            title: 'title1'\n        };\n    },\n\n    methods: {\n        onClick: function onClick(e) {\n            console.log('dashboard click');\n            console.log(e);\n        },\n        onKeyDown: function onKeyDown(value) {\n            alert('搜索值' + value);\n        }\n    }\n});\n\n//# sourceURL=webpack:///./src/pages/dashboard/App.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _shared_button_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../shared/button/index */ \"./src/shared/button/index.vue\");\n/* harmony import */ var _shared_search_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/search/index */ \"./src/shared/search/index.vue\");\n//\n//\n//\n//\n//\n//\n//\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: '',\n  components: {\n    Button: _shared_button_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n    Search: _shared_search_index__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n  },\n  data: function data() {\n    return {\n      title: 'title1'\n    };\n  },\n  methods: {\n    onClick: function onClick(e) {\n      console.log('dashboard click');\n      console.log(e);\n    },\n    onKeyDown: function onKeyDown(value) {\n      alert('搜索值' + value);\n    }\n  }\n});\n\n//# sourceURL=webpack:///./src/pages/dashboard/App.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sha
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: 'shared-button',\n\n  props: {\n    title: {\n      type: String,\n      default: function _default() {\n        return 'title';\n      }\n    }\n  },\n\n  methods: {\n    onClick: function onClick() {\n      console.log('click');\n      this.$emit('click', 'params');\n    }\n  }\n\n});\n\n//# sourceURL=webpack:///./src/shared/button/index.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _button_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button.ts */ \"./src/shared/button/button.ts\");\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: 'shared-button',\n  props: {\n    title: {\n      type: String,\n      \"default\": function _default() {\n        return 'title';\n      }\n    }\n  },\n  methods: {\n    onClick: function onClick() {\n      console.log(Object(_button_ts__WEBPACK_IMPORTED_MODULE_0__[\"getButtonText\"])(1));\n      console.log(Object(_button_ts__WEBPACK_IMPORTED_MODULE_0__[\"getButtonText\"])('2'));\n      console.log('click');\n      this.$emit('click', 'params');\n    }\n  }\n});\n\n//# sourceURL=webpack:///./src/shared/button/index.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -118,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n\n/* 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    name: 'shared-search',\n\n    props: {},\n    data: function data() {\n        return {\n            inputValue: ''\n        };\n    },\n\n    methods: {\n        onKeyDown: function onKeyDown(e) {\n            if (e.keyCode == 13) {\n                this.$emit('keydown', this.inputValue);\n            }\n        }\n    }\n\n});\n\n//# sourceURL=webpack:///./src/shared/search/index.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: 'shared-search',\n  props: {},\n  data: function data() {\n    return {\n      inputValue: ''\n    };\n  },\n  methods: {\n    onKeyDown: function onKeyDown(e) {\n      if (e.keyCode == 13) {\n        this.$emit('keydown', this.inputValue);\n      }\n    }\n  }\n});\n\n//# sourceURL=webpack:///./src/shared/search/index.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -129,7 +129,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n\n/* harmony 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".title {\\n  background-color: #000;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/pages/dashboard/App.vue?./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib??vue-loader-options");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".title {\\n  background-color: #EEE;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/pages/dashboard/App.vue?./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -362,7 +362,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App */ \"./src/pages/dashboard/App.vue\");\n\n\n\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n  el: '#App',\n  render: function render(h) {\n    return h(_App__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n  }\n});\n\n//# sourceURL=webpack:///./src/pages/dashboard/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App */ \"./src/pages/dashboard/App.vue\");\n\n\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n  el: '#App',\n  render: function render(h) {\n    return h(_App__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n  }\n});\n\n//# sourceURL=webpack:///./src/pages/dashboard/main.js?");
+
+/***/ }),
+
+/***/ "./src/shared/button/button.ts":
+/*!*************************************!*\
+  !*** ./src/shared/button/button.ts ***!
+  \*************************************/
+/*! exports provided: getButtonText */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getButtonText\", function() { return getButtonText; });\nvar getButtonText = function getButtonText(type) {\n  var msg = 1;\n\n  if (type === 1) {\n    msg = '11111';\n  }\n\n  return msg;\n};\n\n//# sourceURL=webpack:///./src/shared/button/button.ts?");
 
 /***/ }),
 

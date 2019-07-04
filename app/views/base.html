@@ -12,10 +12,6 @@
   <meta name="MobileOptimized" content="320">
   <meta name="Baiduspider" content="noarchive">
   <meta name="format-detection" content="telephone=no">
-  {# seo特殊需求，几个特殊店铺需要防止商品被爬虫 #}
-  {% if isPreventCrawler %}
-  <meta name="robots" content="noindex,nofollow"/>
-  {% endif %}
   <meta http-equiv="cleartype" content="on">
   <meta name="keywords" content="{{ keywords }}"/>
   <meta name="description" content="{{ description }}"/>
@@ -24,30 +20,12 @@
       {{ title }}
     {% endblock %}
   </title>
-  {% block favicon %}
   <link rel="icon" href="">
-  {% endblock %}
-
-  {% block head_script %}{% endblock %}
-
   </head>
   <body ontouchstart="ontouchstart" class="{% block body_class %}{% endblock %}">
-    {# 通用顶部信息 #}
-  {% block common_header %}{% endblock %}
-  {# 顶部栏 #}
-  {% block base_header %}{% endblock %}
-  {# 页面内容 #}
   {% block page_content %}
   <div id="app"></div>
   {% endblock %}
-  {# 通用footer #}
-  {% block base_footer %}{% endblock %}
-
-  {# 全局脚本 #}
-  {% block base_script %}{% endblock %}
-  {# 业务级脚本 #}
-  {% block project_script %}{% endblock %}
-  {# 页面级脚本 #}
   {% block page_script %}{% endblock %}
   </body>
 </html>
